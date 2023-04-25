@@ -1,0 +1,127 @@
+// .m-HeaderPrimary
+// 	width: 100%
+// 	display: flex
+// 	flex-direction: column
+// 	justify-content: center
+// 	align-items: center
+// 	gap: 53px
+// 	position: fixed
+// 	top: 0
+// 	left: 0
+// 	z-index: 10
+// 	transition: background-color 0.3s linear
+
+// 	&.-scroll
+// 		background-color: #2F395A
+// 		height: 115px
+
+// 	&__rectangle
+// 		+max(1066px)
+// 			display: none
+
+// 	&__container
+// 		display: flex
+// 		justify-content: space-between
+// 		flex-wrap: wrap
+// 		align-items: center
+// 		width: 83%
+// 		height: 157px
+// 		+max($bp-md)
+// 			gap: 20px
+// 		+max($bp-sm)
+// 			flex-wrap: nowrap
+// 			gap: 0
+
+// 		&-left, &-right
+// 			display: flex
+// 			justify-content: space-between
+// 			align-items: center
+// 			gap: 20px
+
+// 	&__logo
+// 		+max($bp-xxs)
+// 			width: 120px
+
+// 	&__link
+// 		+max(1066px)
+// 			display: none
+
+// 	&__menu
+// 		display: flex
+// 		gap: 40px
+// 		+max(1066px)
+// 			display: none
+// 		.m-Button
+// 			padding: 0 8px
+// 			+max(1066px)
+// 				display: flex
+// 				justify-content: space-between
+// 				align-items: center
+// 				height: 48px
+
+// 		&.-mobile
+// 			display: none
+// 			+max(1066px)
+// 				display: block
+
+// 	&__item
+// 		position: relative
+// 		display: flex
+// 		align-items: center
+// 		padding: 35px 0
+
+// 	&__drop
+// 		display: none
+// 		flex-direction: column
+// 		gap: 14px
+// 		position: absolute
+// 		top: 100%
+// 		left: -48px
+// 		width: 312px
+// 		padding: 33px 40px
+// 		background: $white
+// 		border-radius: 10px
+// 		box-shadow: 0px 24px 100px -8px rgba(0, 0, 0, 0.1)
+
+// 		&::after
+// 			content: ""
+// 			position: absolute
+// 			width: 16px
+// 			height: 16px
+// 			left: 50.69px
+// 			top: -7px
+// 			background: $white
+// 			border-radius: 2px
+// 			transform: rotate(-45deg)
+
+// 	&__link
+// 		font-size: 18px
+// 		padding: 13px 32px
+// 		color: $white
+// 		text-decoration: none
+// 		border-radius: 8px
+// 		+max($bp-sm)
+// 			display: none
+
+// 		&--black
+// 			color: #000000
+
+// 		&:hover
+// 			color: $red
+// 			transition: all 0.3s ease-in-out
+
+// 		&--red
+// 			background: $red
+// 			color: $white
+// 			font-weight: 600
+
+// 			&:hover
+// 				background: #FA292F
+// 				color: $white
+// 				transition: all 0.3s ease-in-out
+
+// 	&__rectangle
+// 		width: 32px
+// 		height: 0px
+// 		border: 1px solid rgba(219, 214, 216, 0.1)
+// 		transform: rotate(-90deg)

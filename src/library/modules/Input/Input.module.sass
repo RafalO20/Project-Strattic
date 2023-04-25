@@ -1,0 +1,23 @@
+.m-Input
+  display: block
+  padding: 20px 32px
+  background-color: $white
+  border: none
+  outline: none
+  resize: none
+  width: 100%
+  color: $black
+  +fslh(18, 18)
+  font-family: $font-primary
+  font-weight: 500
+  caret-color: $black
+
+  &::placeholder
+    color: $darkGrey
+
+  &.-pillMobile
+    +max($bp-sm)
+      border-radius: 40px
+
+  &.-rounded
+    border-radius: 5px

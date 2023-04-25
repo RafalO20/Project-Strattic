@@ -1,0 +1,20 @@
+<div class="welcome-card-main-text">Want to learn more?</div>
+<div class="welcome-card">
+{% for item in fields.card %}
+        <div class="main-container-card">
+                <div class="container-card">
+                        <div class="container-card__logo-container">
+                                <div class="container-card__logo-small-container"><img class="container-card__logo" src="{{item.logo}}" /></div>
+                        </div>
+                        {# <div class="container-card__logo-container-two">
+                                <div class="container-card__logo-small-container-two"><img class="container-card__logo" src="{{item.logoone}}" /></div>
+                        </div> #}
+                        <div class="container-card__main-text">{{item.maintext}}</div>
+                        <div class="container-card__small-text">{{item.smalltext}}</div>
+                        <div class="container-card__learn-text"><a class="container-card__learn-text-element">{{item.learntext}}</a><img src="{{item.arrow}}" /></div>
+                </div>
+        </div>
+{% endfor %}
+</div>
+
+

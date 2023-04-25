@@ -1,0 +1,28 @@
+<style>
+	.welcome-strattic-features__container {
+		background-image: url({{fields.background.url}});
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+</style>
+<div class="welcome-strattic-features">
+    <div class="welcome-strattic-features__container">
+        <h1 class="welcome-strattic-features__maintext">{{fields.maintext}}</h1>
+        <div class="welcome-strattic-features__smalltext">{{fields.smalltext}}</div>
+    </div>
+</div>
+<div class="features-main-text__container">           
+    {% for item in fields.image %}
+        <div class="features-main-text__small-container">
+            <img class="features-main-text__logo" src="{{item.logo}}" alt="photo">
+            <div class="features-main-text__text">{{item.text}}</div>
+        </div>
+    {% endfor %}
+</div>
+
+{# <div class="welcome-strattic-features">
+    <div class="welcome-strattic-features__container">
+        <h1 class="welcome-strattic-features__maintext">{{fields.maintext}}</h1>
+        <div class="welcome-strattic-features__smalltext">{{fields.smalltext}}</div>
+    </div>
+</div> #}

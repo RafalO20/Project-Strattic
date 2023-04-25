@@ -1,0 +1,83 @@
+<style>
+	.main-container-footer{
+		background-image: url({{fields.background.url}});
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-height: 300%;
+        padding-bottom: 40px;
+    }
+</style>
+
+<div class="main-container-footer">
+    <div class="container-footer">
+        <div class="first-footer-container">
+            <div class="first-footer-container__left-text">Sign up to our Newsletter</div>
+            <form>
+                <input class="first-footer-container__text" type="text" placeholder="Your email">
+                <input class="first-footer-container__button" type="submit" value="Sign up">
+            </form>
+        </div>
+        <div class="secondary-footer-container">
+            <div class="secondary-footer-container__small-one">
+                <p class="secondary-footer-container__main-text">About Static</p>
+                <div><a href="#" class="secondary-footer-container__small-text">Why Strattic</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">Tour</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">Pricing</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">F.A.Q.</a></div>
+            </div>
+            <div class="secondary-footer-container__small-two">
+                <p class="secondary-footer-container__main-text">Learn More</p>
+                <div><a href="#" class="secondary-footer-container__small-text">Help Center</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">F.A.Q.</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">Blog</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">Strattic Tools</a></div>
+            </div>
+            <div class="secondary-footer-container__small-three">
+                <p class="secondary-footer-container__main-text">The Company</p>
+                <div><a href="#" class="secondary-footer-container__small-text">The Team</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">Careers</a></div>
+                <div><a href="#" class="secondary-footer-container__small-text">Contact</a></div>
+            </div>
+            <div class="secondary-footer-container__small-three">
+                <p class="secondary-footer-container__main-text">Compare Strattic to Other Hosts</p>
+                <div class="secondary-footer-container__position">
+                    <div>
+                        <div><a href="#"class="secondary-footer-container__small-text">Strattic vs. WP Engine</a></div>
+                        <div><a href="#"class="secondary-footer-container__small-text">Strattic vs. Kinsta</a></div>
+                        <div><a href="#"class="secondary-footer-container__small-text">Strattic vs. Cloudways</a></div>
+                        <div><a href="#"class="secondary-footer-container__small-text">Strattic vs. Amazon</a></div>
+                    </div>
+                    <div class="secondary-footer-container__position-small">
+                        <div><a href="#" class="secondary-footer-container__small-text">Strattic vs. Digital Ocean</a></div>
+                        <div><a href="#"class="secondary-footer-container__small-text">Strattic vs. WP2Static</a></div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="container-footer__line"></div>
+        <div class="third-footer-container">
+            <div><a href="#"><img src="{{fields.imagelogo}}"/></a></div>
+            <div><img src="{{fields.imagemade}}"/></div>
+            <div class="third-footer-container__logos">
+                {% for item in fields.imagelogos %}
+                    <div class="third-footer-container__logos-small">
+                        <a href="#" class="third-footer-container__logos-small-im" ><img src="{{item.logoone}}"/></a>
+                    </div>
+                    <div class="third-footer-container__logos-small">
+                        <a href="#" class="third-footer-container__logos-small-im" ><img src="{{item.logotwo}}"/></a>
+                    </div>
+                    <div class="third-footer-container__logos-small">
+                        <a href="#" class="third-footer-container__logos-small-im" ><img src="{{item.logothree}}"/></a>
+                    </div>
+                    <div class="third-footer-container__logos-small">
+                        <a href="#" class="third-footer-container__logos-small-im-two" ><img src="{{item.logofour}}"/></a>
+                    </div>
+                    <div class="third-footer-container__logos-small">
+                        <a href="#" class="third-footer-container__logos-small-im-two" ><img src="{{item.logofive}}"/></a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+.features-boxes
+    display: flex
+    justify-content: space-around
+    max-width: 1360px
+    margin: auto
+    margin-top: 50px
+    +max($bp-xlg)
+        flex-direction: column
+        margin-top: 0px
+    &__container
+        width: 590px
+        height: 350px
+        background: #FFFFFF
+        border-radius: 16px
+        display: flex
+        padding: 40px
+        margin: auto
+        +max($bp-xlg)
+            margin-top: 20px
+        +max($bp-xs)
+            display: block
+            max-width: 300px
+            min-height: 450px
+            padding: 10px
+        &:hover
+            box-shadow: 0px 24px 100px -8px rgba(0, 0, 0, 0.1)
+            cursor: pointer
+    &__logo-container
+        min-width: 64px
+        height: 64px
+        background: linear-gradient(180.63deg, #FAFAFA 0.35%, #E9E7E8 99.27%)
+        border-radius: 16px
+        text-align: center
+        padding-top: 20px
+        +max($bp-xs)
+            width: 64px
+            padding: 20px
+    &__small-container
+        margin-left: 50px
+        padding-top: 5px
+        +max($bp-xs)
+            margin-left: 10px
+    &__text-logo
+        font-family: 'Archivo'
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        color: #1AC3DA
+        padding-bottom: 20px
+        +max($bp-xs)
+            padding-top: 10px     
+    &__main-text
+        font-family: 'Hind'
+        font-style: normal
+        font-weight: 600
+        font-size: 28px
+        line-height: 130%
+        color: #000000
+        margin-right: 100px
+        margin-bottom: 20px
+        +max($bp-xs)
+            margin-right: 10px
+            margin-bottom: 10px
+    &__small-text
+        font-family: 'Hind'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        color: #2F3A5F
+        line-height: 170%

@@ -1,0 +1,143 @@
+.b-Welcome
+    padding: 380px 0 129px 0
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-repeat: no-repeat
+    background-size: cover
+    margin-top: -162px
+    +max($bp-md)
+        padding: 300px 0 129px 0
+    &__title
+        margin-bottom: 90px
+        max-width: 1360px
+        display: flex
+        justify-content: space-between
+        gap: 40px
+        margin-right: 40px
+        margin-left: 40px
+        +max($bp-xxlg)
+            margin-bottom: 85px
+        +max($bp-sm)
+            margin: 0
+            flex-direction: column-reverse
+        +max($bp-lg)
+            flex-direction: column-reverse
+            margin-left: 40px
+            margin-right: 40px
+        &-text
+            display: flex
+            flex-direction: column
+            gap: 25px
+            color: $white
+            +max($bp-sm)
+                justify-content: center
+                align-items: center
+                margin-bottom: 50px
+                text-align: center
+            +max($bp-xs)
+                margin-bottom: 45px
+
+            &-small
+                font-family: $font-secondary
+                font-weight: 400
+                font-size: 20px
+                line-height: 170%
+                margin-bottom: 64px
+                +max($bp-xxs)
+                    font-size: 16px
+
+            &-big
+                font-weight: 600
+                font-size: 64px
+                line-height: 130%
+                +max(320px)
+                    font-size: 40px
+                +max($bp-xxs)
+                    font-size: 40px
+
+            &-button
+                width: 197px
+                text-align: center
+                padding: 21px 48px
+                background: #17AFC3
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16)
+                border-radius: 6px
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                letter-spacing: -0.01em
+                color: $white
+                text-decoration: none
+
+                &:hover
+                    background: #17AFC3
+                    cursor: pointer
+                    transition: all 0.3s ease-in-out
+
+        &-image
+            width: 100%
+            height: auto
+
+    &__partners
+        max-width: 1360px
+        padding-top: 100px
+        display: flex
+        flex-direction: column
+        gap: 65px
+        margin-left: 40px 
+        margin-right: 40px
+
+        &-title
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            &-text
+                font-weight: 600
+                font-size: 13px
+                line-height: 180%
+                text-transform: uppercase
+                color: $white
+                +max($bp-xxlg)
+                    margin: auto
+
+            &-rectangle
+                width: 90%
+                height: 0px
+                border: 1px solid rgba(255, 255, 255, 0.05)
+                // +max($bp-sm)
+                //     width: 70%
+                +max($bp-xxlg)
+                    display: none
+
+        &-images
+            max-width: 1360px
+            opacity: 0.5
+            display: grid
+            place-items: center
+            grid-template-columns: repeat(auto-fill, minmax(103px, 1fr))
+            grid-template-rows: 1fr
+            grid-column-gap: 100px
+            grid-row-gap: 10em
+            +max($bp-xxs)
+                grid-template-columns: none
+            +max($bp-xxlg)
+                margin: auto
+                max-width: 720px
+            +max($bp-md)
+                max-width: 500px
+            &-image
+                width: auto
+                height: auto
+    &__title-text-big
+        +max($bp-lg)
+            text-align: center
+    &__title-text-small
+        +max($bp-lg)
+            text-align: center
+    &__title-text-button
+        +max($bp-lg)
+            margin: auto

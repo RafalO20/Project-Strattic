@@ -1,0 +1,36 @@
+<style>
+	.b-Welcome {
+		background-image: url({{fields.background.url}});
+	}
+</style>
+<div class="b-Welcome">
+	<div class="b-Welcome__title">
+		<div class="b-Welcome__title-text">
+			<div class="b-Welcome__title-text-big">{{fields.title.bigtext}}</div>
+			<div class="b-Welcome__title-text-small">{{fields.title.smalltext}}</div>
+			{% if fields.title.button %}
+				<a class="b-Welcome__title-text-button" id="feature0" href="#Tofeature">{{fields.title.button}}</a>
+			{% endif %}
+		</div>
+		{% if fields.title.image %}
+			<div class="b-Welcome__title-image">
+				<img class="b-Welcome__title-image" src="{{fields.title.image}}" width="574" height="510.68" alt="laptop">
+			</div>
+		{% endif %}
+	</div>
+
+	{% if fields.partners %}
+		<div class="b-Welcome__partners">
+			<div class="b-Welcome__partners-title">
+				<div class="b-Welcome__partners-title-text">{{fields.partners.text}}</div>
+				<div class="b-Welcome__partners-title-rectangle"></div>
+			</div>
+			<div class="b-Welcome__partners-images">
+				{% for image in fields.partners.partner %}
+					<img class="b-Welcome__partners-images-image" src="{{image.image}}" width="154" height="51" alt="image">
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+	</div>
+</div>

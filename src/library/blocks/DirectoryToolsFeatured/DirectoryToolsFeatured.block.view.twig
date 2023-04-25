@@ -1,0 +1,23 @@
+<div class="directory-tools-featured">
+    <div class="directory-tools-featured__title-text">{{fields.titletext}}</div>
+    <div class="directory-tools-featured__big-container">
+        <div>
+            <form class="directory-tools-featured__container-form">
+                <input class="directory-tools-featured__place" type="text" placeholder="Search">
+                <button class="directory-tools-featured__button" type="submit"><img src="{{theme.link}}/static/img/Group.svg" alt="logo"/></button>
+            </form>
+            {% for item in fields.textnav %}
+                <div class="directory-tools-featured__small-nav">{{item.text}}</div>
+            {% endfor %}
+        </div>
+        <div class="directory-tools-featured__right-big-container">
+            {% for item in fields.container %}
+                <div class="directory-tools-featured__right-container">
+                    <div><img src="{{item.image}}" alt="logo"/></div>
+                    <div class="directory-tools-featured__text-container">{{item.text}}</div>
+                    <div class="directory-tools-featured__text-small-container">{{item.textsmall}}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

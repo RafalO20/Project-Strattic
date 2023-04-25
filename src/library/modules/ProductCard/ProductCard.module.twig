@@ -1,0 +1,11 @@
+<a class="m-ProductCard" href="{{link}}" title="{{title}}">
+  <picture>
+    <source srcset="{{image|resize(imageWidthNormal, imageHeightNormal, "center")}}" media="(min-width: 480px)" >
+    <source srcset="{{image|resize(imageWidthSmall, imageHeightSmall, "center")}}">
+    <img class="m-ProductCard__img" src="{{image|resize(imageWidthNormal, imageHeightNormal, "center")}}" alt="{{imageAlt}}"/>
+  </picture>
+  <div class="m-ProductCard__box {% if textLayout == "onlyTitle" %}-onlyTitle {% elseif textLayout == "titleText" %}-titleText {% elseif textLayout == "textTitle" %}-textTitle{% endif %}">
+    <div class="m-ProductCard__title"> {{title}} </div>
+    {% if text %}<div class="m-ProductCard__text"> {{text}} </div>{% endif %}
+  </div>
+</a>

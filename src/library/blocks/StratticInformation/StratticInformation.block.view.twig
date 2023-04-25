@@ -1,0 +1,41 @@
+{% for item in fields.textcontainer %}
+    {% if loop.index % 2 == 0 %}
+        <div class="main-container main-container-small-one">
+            <div class="main-container__small">
+                    {% if item.background %}
+                        <img class="main-container__background" src="{{item.background}}" alt="image">
+                    {% endif %}
+                    {% if item.maintext %}
+                        <h2 class="main-container__main-text">{{item.maintext}}</h2>
+                    {% endif %}
+                    {% if item.smalltext %}
+                        <p class="main-container__small-text">{{item.smalltext}}</p>
+                    {% endif %}
+            </div>
+            <div>
+                {% if item.image %}
+                    <img class="main-container-two__image-big" src="{{item.image}}" alt="image">
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        <div class="main-container">
+            <div>
+                {% if item.image %}
+                    <img class="main-container-two__image-big" src="{{item.image}}" alt="image">
+                {% endif %}
+            </div>
+            <div class="main-container__small">
+                    {% if item.background %}
+                        <img class="main-container__background" src="{{item.background}}" alt="image">
+                    {% endif %}
+                    {% if item.maintext %}
+                        <h2 class="main-container__main-text">{{item.maintext}}</h2>
+                    {% endif %}
+                    {% if item.smalltext %}
+                        <p class="main-container__small-text">{{item.smalltext}}</p>
+                    {% endif %}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

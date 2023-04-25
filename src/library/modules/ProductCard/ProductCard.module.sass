@@ -1,0 +1,85 @@
+.m-ProductCard
+  display: flex
+  flex-direction: column
+  border-radius: 18px
+  overflow: hidden
+  height: 100%
+  cursor: pointer
+  text-decoration: none
+  background: $other-grey
+
+  &:hover
+    text-decoration: none
+    .m-ProductCard__title
+      color: $lightPurple
+
+  &__img
+    display: block
+    min-width: 100%
+    margin: 0 auto
+    object-fit: cover
+
+  &__box
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    background: $other-grey
+    padding: 20px 50px
+    border-radius: 0px 0px 18px 18px
+
+    +max($bp-sm)
+      padding: 10px
+
+    &.-onlyTitle
+      padding: 30px 10px
+      text-align: center
+      align-items: center
+      text-transform: uppercase
+
+      .m-ProductCard__title
+        +max($bp-sm)
+          +fslh(25, 25)
+
+    &.-textTitle
+      flex-direction: column-reverse
+
+      +max($bp-sm)
+        padding: 10px
+
+      .m-ProductCard__text
+        margin-bottom: 10px
+
+        +max($bp-sm)
+          margin-bottom: 4px
+          +fslh(8, 14)
+
+      .m-ProductCard__title
+        +max($bp-sm)
+          +fslh(13, 15)
+
+    &.-titleText
+      +max($bp-sm)
+        padding: 30px
+
+      .m-ProductCard__title
+        margin-bottom: 10px
+        
+
+  &__title
+    font-weight: 900
+    +fslh(20, 24)
+    color: $purple
+    transition: all 0.2s linear
+
+  &__text
+    font-weight: 500
+    +fslh(18, 21)
+    color: $black
+
+  picture
+    display: block
+    align-self: center
+    min-width: 100%
+
+
+

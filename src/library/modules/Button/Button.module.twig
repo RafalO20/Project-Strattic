@@ -1,0 +1,16 @@
+{% if type == "button" %}
+	<button class="m-Button {% if color == "black" %} -black{% elseif color == "white" %} -white{% elseif color == "red" %} -red{% elseif color == "blue" %} -blue{% elseif color == "other_grey" %} -other_grey{% endif %}{% if size == "big" %} -big{% elseif size == "large" %} -large{% elseif size == "medium" %} -medium{% elseif size == "small" %} -small{% endif %}{% if drop == true %} -drop{% endif %}{{class}}">
+		{{text}}
+		{% if drop == true %}
+			<span class="icon-arrow-down"></span>
+		{% endif %}
+	</button>
+{% elseif type == "link" %}
+	<a href="{{link}}" class="m-Button {% if color == "black" %} -black{% elseif color == "white" %} -white{% elseif color == "red" %} -red{% elseif color == "blue" %} -blue{% elseif color == "other_grey" %} -other_grey{% endif %}{% if size == "big" %} -big{% elseif size == "large" %} -large{% elseif size == "medium" %} -medium{% elseif size == "small" %} -small{% endif %}{% if drop == true %} -drop{% endif %} {{class}}">
+		{{text}}
+		{% if drop == true %}
+			<span class="icon-arrow-down"></span>
+		{% endif %}
+	</a>
+{% endif %}
+

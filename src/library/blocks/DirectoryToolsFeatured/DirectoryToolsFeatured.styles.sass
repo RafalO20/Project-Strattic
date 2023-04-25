@@ -1,0 +1,85 @@
+.directory-tools-featured
+    max-width: 1360px
+    margin: auto
+    &__big-container
+        display: flex
+        +max($bp-md)
+            display: block
+    &__right-big-container
+        width: 100%
+        display: grid
+        place-items: center
+        grid-template-columns: repeat(auto-fill, minmax(277px, 1fr))
+        grid-template-rows: 1fr
+        grid-column-gap: 15px
+        grid-row-gap: 15px
+        grid-row-gap: 15px
+    &__right-container
+        width: 287px
+        height: 300px
+        border: 1px solid rgba(227, 225, 226, 0.5)
+        border-radius: 10px
+        cursor: pointer
+        padding: 40px
+        &:hover
+            width: 287px
+            height: 300px
+            box-shadow: 0px 24px 100px -8px rgba(0, 0, 0, 0.1)
+            border-radius: 10px             
+    &__title-text
+        font-family: 'Hind'
+        font-weight: 600
+        font-size: 40px
+        text-align: center
+        margin-bottom: 50px
+        margin-top: 100px
+    &__container-form
+        margin-bottom: 30px
+        padding-right: 20px
+        display: flex
+        +max($bp-md)
+            justify-content: center
+    &__place
+        padding: 17px 24px
+        border: 1px solid #DBD6D8
+        border-radius: 10px
+    &__button
+        padding: 19px 20px
+        // background: #1AC3DA
+        border-radius: 10px
+        border: 0px
+        margin-left: 10px
+        cursor: pointer
+        background: #1AC3DA url(/static/img/zoom.png) no-repeat scroll 7px 7px
+        &:hover
+            background: #20e5ff
+    &__small-nav
+        font-family: 'Hind'
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        color: #2F3A5F
+        padding: 12px 24px
+        width: 246px
+        height: 53px
+        border-radius: 10px
+        line-height: 180%
+        cursor: pointer
+        &:hover
+            background: rgba(26, 195, 218, 0.1)
+            color: rgba(26, 195, 218, 1)
+        +max($bp-md)
+            display: none
+    &__text-container
+        margin-top: 20px
+        font-family: 'Archivo'
+        font-weight: 600
+        font-size: 24px
+        line-height: 130%
+    &__text-small-container
+        font-family: 'Hind'
+        font-weight: 400
+        font-size: 16px
+        line-height: 180%
+        color: rgba(47, 58, 95, 1)
+

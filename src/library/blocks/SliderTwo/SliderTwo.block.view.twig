@@ -1,0 +1,39 @@
+<style>
+    .swiper-slide{
+        background-image: url({{fields.background.url}});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+</style>
+{# <div class="big-container">
+    <div>  #}
+<div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            {% for item in fields.textcontainer %}
+                <div class="swiper-slide">
+                    <div class="container__left-two">
+                        <p class="container__main-text-two">{{item.text}}</p>
+                        <div class="container__left-small-two">
+                            <div class="container__small-image-two">
+                                <img src="{{item.smallimage}}" alt="photo">
+                            </div>
+                            <div class="container__small-info-two">
+                                <p class="container__name-two">{{item.name}}</p>
+                                <p class="container__page-two">{{item.page}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__right-two">
+                        <img class="container__photo-two" src="{{item.photo}}" alt="photo">
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+</div>
+    {# </div>
+</div> #}

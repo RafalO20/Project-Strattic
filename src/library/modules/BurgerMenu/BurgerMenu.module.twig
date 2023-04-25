@@ -1,0 +1,52 @@
+<div class="m-BurgerMenu">
+  {% if stickColor == "purple" %}
+  <img src="{{theme.link}}/static/img/burger-menu-open-purple.svg" alt="Open menu" class="m-BurgerMenu__open">
+  {% else %}
+  <img src="{{theme.link}}/static/img/menu-main.svg" alt="Open menu" class="m-BurgerMenu__open">
+  {% endif %}
+  <div class="m-BurgerMenu__slide">
+    <div class="m-BurgerMenu__top">
+      <a href="/">
+        <img src="{{theme.link}}/static/img/logo-mobile.svg" alt="PAS YISROEL" class="m-BurgerMenu__logo">
+      </a>
+      <img src="{{theme.link}}/static/img/close.svg" alt="Open menu" class="m-BurgerMenu__close">
+    </div>
+    <div class="m-BurgerMenu__container">
+      <ul class="m-BurgerMenu__menu">
+        {% for item in nav.burger.items %}
+        <li class="m-BurgerMenu__item">
+          {% if item.children %}
+          {% include "modules/Button/Button.module.twig" with {
+          type: "button",
+          text: item.title,
+          drop: true
+          }%}
+          <ul class="m-BurgerMenu__drop">
+            {% for child in item.children %}
+            <li class="m-BurgerMenu__childItem">
+              {% include "modules/Button/Button.module.twig" with {
+              type: "link",
+              color: "lightPurple",
+              link: child.link,
+              text: child.title
+              }%}
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          {% include "modules/Button/Button.module.twig" with {
+          type: "link",
+          link: item.link,
+          text: item.title
+          }%}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="m-BurgerMenu__container-button">
+        <div class="m-BurgerMenu__container-button-login" href="#"><a>Login</a></div>
+        <div class="m-BurgerMenu__container-button-get" href="#"><a>Get started</a></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+.main-container-footer
+    margin-top: 200px
+.container-footer
+    max-width: 1360px
+    margin: auto 
+    &__line
+        width: 100%
+        background-color: #fff
+        height: 1px
+        opacity: 0.1
+        margin: 100px 0
+.first-footer-container
+    display: flex
+    justify-content: space-between
+    padding-top: 200px 
+    margin-left: 20px
+    margin-right: 20px
+    +max($bp-lgg)
+        flex-direction: column
+        text-align: center
+    &__left-text
+        font-family: 'Archivo'
+        font-style: normal
+        font-weight: 600
+        font-size: 42px
+        line-height: 130%
+        color: #FFFFFF
+        +max($bp-lgg)
+            margin: auto
+            margin-bottom: 10px
+            font-size: 30px
+    &__text
+        align-items: center
+        padding: 17px 32px
+        margin-right: 10px
+        width: 336px
+        height: 56px
+        background: #FFFFFF
+        border: 1px solid #DBD6D8
+        border-radius: 10px
+        font-family: 'Hind'
+        font-weight: 500
+        font-size: 16px
+        +max($bp-xs)
+            width: 250px
+    &__button
+        padding: 17px 44px
+        width: 141px
+        height: 56px
+        background: #FB4247
+        border-radius: 10px
+        font-family: 'Hind'
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #FFFFFF
+        border: 1px solid #FB4247
+        cursor: pointer
+        &:hover
+          background-color: #FB4220
+        +max($bp-lgg)
+        margin-top: 10px
+
+.secondary-footer-container
+    display: flex
+    justify-content: space-between
+    margin-top: 100px
+    margin-left: 20px
+    margin-right: 20px
+    +max($bp-lgg)
+        flex-direction: column
+        text-align: center
+    &__main-text
+        font-family: 'Archivo'
+        font-weight: 600
+        font-size: 20px
+        line-height: 80px
+        color: #FFFFFF
+    &__small-text
+        font-family: 'Hind'
+        text-decoration: none
+        font-weight: 400
+        font-size: 16px
+        color: #C9CBD3
+        line-height: 35px
+        &:hover
+            color: #FFF
+    &__position
+        display: flex
+        +max($bp-lgg)
+            flex-direction: column
+            text-align: center
+    &__position-small
+        margin-left: 80px
+        +max($bp-lgg)
+            margin: 0px
+
+.third-footer-container
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    margin-left: 20px
+    margin-right: 20px
+    +max($bp-lgg)
+        flex-direction: column
+        text-align: center
+    &__logos
+        display: flex
+        +max($bp-lgg)
+            margin: auto
+            margin-top: 40px
+    &__logos-small
+        position: relative
+        width: 40px
+        height: 40px
+        background: #2F3A5F
+        border-radius: 45px
+        margin-left: 10px
+        &:hover
+            background: #515b7e
+    &__logos-small-im
+        position: absolute
+        top: calc( 50% - 8px )
+        left: calc( 50% - 8px )
+    &__logos-small-im-two
+        position: absolute
+        top: calc( 50% - 7px )
+        left: calc( 50% - 7px )

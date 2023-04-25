@@ -1,0 +1,25 @@
+<style>
+	.benefits-hosting-header__main-text-container {
+		background-image: url({{fields.background.url}});
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 200px;
+	}
+</style>
+<div class="benefits-hosting-header__main-container">
+    <div class="benefits-hosting-header__main-text-container">
+        <div class="benefits-hosting-header__main-text">Benefits of Strattic Hosting</div>
+        <div class="benefits-hosting-header__small-text">Here at the Top 10 reasons customers choose Strattic!</div>
+    </div>
+    <div class="benefits-hosting-header__container">
+        <div class="benefits-hosting-header__small-container">
+            {% for item in fields.image %}
+            <div class="benefits-hosting-header__logo-container">
+                <img class="benefits-hosting-header__logo" src="{{item.logo}}" alt="image"/>
+                <div class="benefits-hosting-header__line"></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

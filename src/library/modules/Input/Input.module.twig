@@ -1,0 +1,7 @@
+{% if item.node_type == "input" %}
+<input type="{% if item.type %}{{item.type}}{% else %}text{% endif %}" name="{{item.name}}" id="{{item.id}}"
+  class="m-Input" placeholder="{{item.placeholder}}" value="{{item.value}}" />
+{% elseif item.node_type == "textarea" %}
+<textarea class="m-Input" name="{{item.name}}" id="{{item.id}}" placeholder="{{item.placeholder}}"
+  value="{{item.value}}"></textarea>
+{% endif %}

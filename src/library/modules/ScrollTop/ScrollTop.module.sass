@@ -1,0 +1,33 @@
+.m-ScrollTop
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 64px
+  height: 64px
+  min-width: 64px
+  min-height: 64px
+  border-radius: 50%
+  border: 4px solid $purple
+  overflow: hidden
+  transition: all 0.2s linear
+  cursor: pointer
+  margin: 0 auto
+
+  &:hover
+    background: #6369F430
+
+  +max($bp-sm)
+    width: 48px
+    height: 48px
+    min-width: 48px
+    min-height: 48px
+  
+  picture 
+    display: block
+
+  &__img
+    display: block
+    max-width: 100%
+
+    +max($bp-sm)
+      max-height: 17px

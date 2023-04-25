@@ -1,0 +1,12 @@
+@use "sass:math"
+
+@function lh-calc($font-size, $line-height)
+  $value: round(($line-height / $font-size) * 100) / 100
+  @while $font-size * $value < $line-height
+    $value: $value + 0.01
+
+  @return $value
+
+@mixin fslh($font-size, $line-height)
+  font-size: $font-size * 1px
+  line-height: lh-calc($font-size,$line-height)

@@ -1,0 +1,43 @@
+{% for item in fields.information %}
+    {% if loop.index % 2 == 1 %}
+        <div class="main-container-two">
+            <div class="main-container-two__small">
+                    {% if item.image %}
+                        <img class="main-container-two__background" src="{{item.image}}" alt="image">
+                    {% endif %}
+                    <h2 class="main-container-two__main-text main-container-two__main-text-edit">{{item.maintext}}</h2>
+                    <p class="main-container-two__small-text">{{item.smalltext}}</p>
+                    <div class="main-container-two__button-container">
+                    {% if item.buttontext %}
+                        <a class="main-container-two__button-text">{{item.buttontext}}</a>
+                    {% endif %}
+                    </div>
+            </div>
+            <div>
+                 {% if item.imageinfo %}
+                    <img class="main-container-two__image-big" src="{{item.imageinfo}}" alt="image">
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        <div class="main-container-two main-container-one">
+            <div>
+                {% if item.imageinfo %}
+                    <img class="main-container-two__image-big" src="{{item.imageinfo}}" alt="image">
+                {% endif %}
+            </div>
+            <div class="main-container-two__small">
+                    {% if item.image %}
+                        <img class="main-container-two__background" src="{{item.image}}" alt="image">
+                    {% endif %}
+                    <h2 class="main-container-two__main-text main-container-two__main-text-edit">{{item.maintext}}</h2>
+                    <p class="main-container-two__small-text">{{item.smalltext}}</p>
+                        <div class="main-container-two__button-container">
+                        {% if item.buttontext %}
+                            <a class="main-container-two__button-text">{{item.buttontext}}</a>
+                        {% endif %}
+                        </div>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

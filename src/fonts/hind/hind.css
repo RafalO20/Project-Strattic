@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Hind";
+    src: url("./Hind-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hind";
+    src: url("./Hind-Regular.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Hind";
+    src: url("./Hind-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hind";
+    src: url("./Hind-SemiBold.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Hind";
+    src: url("./Hind-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}

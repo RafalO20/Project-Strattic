@@ -1,0 +1,101 @@
+.swiper 
+    width: 100%
+    height: 100%
+    // max-width: 1360px
+    // max-height: 800px
+    border-radius: 0px
+    margin-top: 100px
+    +max($bp-md)
+        min-height: 150%
+
+
+.swiper-slide
+    font-size: 18px
+    background: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    +max($bp-md)
+        flex-direction: column-reverse
+        text-align: center
+
+
+.swiper-slide img 
+    display: block
+    // width: 100%
+    // max-width: 1360px
+    height: 100%
+    object-fit: cover
+
+
+.swiper-pagination-bullet
+    background-color: #FB4247
+
+
+.container
+    +max($bp-md)
+        margin-bottom: 500px
+    &__right-two
+        max-width: 300px
+        height: 300px
+        // margin-left: 300px
+    &__left-two
+        margin-top: 100px
+        max-width: 800px
+        height: 300px
+        +max($bp-md)
+            margin-top: 0px
+    &__left-small-two
+        margin-top: 20px
+        display: flex
+        +max($bp-md)
+            display: block
+    &__small-image-two
+        width: 80px
+        height: 80px
+        +max($bp-md)
+            margin: auto
+    &__main-text-two
+        font-family: Archivo
+        font-size: 56px
+        font-weight: 600
+        line-height: 67px
+        letter-spacing: 0em
+        text-align: left
+        +max($bp-md)
+            margin-left: 20px
+            margin-right: 20px
+            text-align: center
+            max-width: 500px
+            font-size: 40px
+        +max($bp-xs)
+            font-size: 35px
+    &__small-info-two
+        margin: auto
+        margin-left: 10px
+    &__name-two
+        margin-bottom: 10px
+
+.container-slider-two 
+    max-width: 100%
+    max-height: 500px
+    margin: auto
+    margin-top: 200px
+    margin-bottom: 200px
+.swiper-slide
+    max-width: 100%
+    max-height: 500px
+    background-color: #F9F9FB
+    +max($bp-md)
+        max-height: 1000px
+    
+.swiper
+    max-height: 500px
+    +max($bp-md)
+        min-height: 1000px
+        // min-height: 100%
+
+.swiper-pagination
+    margin-bottom: 10px
+    +max($bp-md)
+        bottom: 5% !important

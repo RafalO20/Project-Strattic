@@ -1,0 +1,9 @@
+{% extends "layouts/base/base.twig" %}
+
+{% block content %}
+    {% include "modules/HeaderPrimary/HeaderPrimary.module.twig" %}
+    {% for post in posts %}
+        {{ post.content }}
+    {% endfor %}
+    {% include "modules/FooterPrimary/FooterPrimary.module.twig" %}
+{% endblock %}
